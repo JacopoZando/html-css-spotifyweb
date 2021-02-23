@@ -5,51 +5,98 @@
   padding: 0;
 }
 
-body {
+main {
   content: "";
   display: table;
   clear: both;
 }
 
-header {
-  position: relative;
+main {
+  height: calc(100vh - 100px);
+  width: 100%;
+  border: 3px solid black;
 }
 
-.my-left-nav {
-  width: 150px;
+
+
+
+
+.my-left-nav-container,
+.my-container-result {
+  float: left;
+}
+
+.my-container-result {
+  width: calc(100% - 230px);
   height: 100%;
-  background-color: #000000;
-  position: fixed;
+}
 
+/* DEFINIZIONE DELLA ZONA SINISTRA DI NAVIGAZIONE */
+
+.my-left-nav-container {
+  width: 230px;
+  height: calc(100vh - 150px);
+  background-color: #000000;
+}
+/* LOGO SPOTIFY */
+.my-left-nav-logo {
+
+  height: 75px;
+  display: flex;
+  align-items: center;
 
 }
+
+.logo-spotify>img {
+  height: 50px;
+}
+
+.my-left-nav-containerdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: green;
+}
+
+.my-left-nav-containerdown-up,
+.my-left-nav-containerdown-down {
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+  border: 1px solid yellow;
+}
+
+
+
+
+
+
+
+
 
 .my-top-nav {
-  height: 150px;
-  width: 100%;
+  height: 75px;
   background-color: yellow;
-  position: fixed;
-  left: 150px;
-
 }
 
 .my-result {
-  left: 150px;
-  top: 150px;
-  bottom: 150px;
   width: 100%;
-  height: 100%;
   background-color: green;
-  
+}
+
+.my-player {
+  height: 100%;
+  width: 100%;
+
+
 
 
 }
 
-.my-player {
-  height: 150px;
+.myfooter {
+  height: 100px;
   width: 100%;
   background-color: red;
-  position: fixed;
-  bottom: 0;
-
+  z-index: 3;
 }
