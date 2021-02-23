@@ -60,7 +60,7 @@ main {
 
 .my-left-nav-container {
   width: 100%;
-  margin: 0 15px;
+  margin: 0 15px 15px 15px;
   background-color: green;
 }
 
@@ -151,14 +151,13 @@ main {
 
 /* NAVIGATORE PER L'UPGRADE */
 
-
-
 #upgrade {
   border: 3px solid white;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
+/* ZONA DEI RISULTATI */
 
 .my-result {
   width: 100%;
@@ -181,4 +180,12 @@ main {
 
 .my-result-container h3 {
   color: white;
+}
+
+.my-album-container>div {
+  display: inline;
+}
+
+.album-cover img {
+  width: calc((100% - 55px)/6);
 }
