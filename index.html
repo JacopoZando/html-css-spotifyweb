@@ -11,48 +11,102 @@
   </head>
   <body>
     <main>
-      <section>
+      <section class="my-left-nav">
         <!-- navigazione di sinistra -->
-        <div class="my-left-nav-container">
-          <!-- zona logo -->
-          <div class="my-left-nav-logo">
-            <a class="logo-spotify" href="#"><img src="img/logo.svg" alt=""></a>
 
-          </div>
-          <!-- zona sotto il logo -->
-          <div class="my-left-nav-containerdown">
-            <!-- parte superiore -->
-            <div class="my-left-nav-containerdown-up">
-              <div class="my-homesearchlibrary">
-
-              </div>
-              <div class="my-playlist">
-
-              </div>
+          <div class="my-left-nav-container">
+            <!-- zona logo -->
+            <div class="my-left-nav-logo">
+              <a class="logo-spotify" href="#"><img src="img/logo.svg" alt=""></a>
 
             </div>
-            <!-- parte inferiore -->
-            <div class="my-left-nav-containerdown-down">
-              <div class="my-installation">
+            <!-- zona sotto il logo -->
+            <div class="my-left-nav-containerdown">
+              <!-- parte superiore -->
+              <div class="my-left-nav-containerdown-up">
+                <div class="my-homesearchlibrary">
+                  <div class="hsl">
+                    <img src="img/home.svg" alt="">
+                    <span class="album-title">Home</span>
+                  </div>
+                  <div class="hsl">
+                    <img src="img/search.svg" alt="">
+                    <span>Search</span>
+                  </div>
+                  <div class="hsl">
+                    <img src="img/libreria.svg" alt="">
+                    <span>La tua libreria</span>
+                  </div>
+                </div>
+                <div class="my-playlist">
+                  <span class="album-title">PLAYLIST</span>
+                  <div class="my-playlist-creation">
+                    <span id="my-more">+</span>
+                    <span>Crea Playlist</span>
+                  </div>
+                  <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                  </ul>
+                </div>
 
               </div>
-              <div class="my-userprofile">
-
+              <!-- parte inferiore -->
+              <div class="my-left-nav-containerdown-down">
+                <div class="my-installation">
+                  <span><i class="fas fa-arrow-circle-down"></i> Installa app</span>
+                </div>
+                <div class="my-userprofile">
+                  <img src="img/profile.svg" alt="">
+                  <span class="album-title">John Dae</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
       <div class="my-container-result">
         <section>
-          <div class="my-top-nav">
-            TOP
+          <div class="my-upgrade">
+            <a id="upgrade" href="#">EFFETTUA L'UPGRADE</a>
+
           </div>
         </section>
 
         <section>
           <div class="my-result">
-            RESULT
+            <div class="my-result-nav">
+              <ul>
+                <li>IN EVIDENZA</li>
+                <li>IN EVIDENZA</li>
+                <li>IN EVIDENZA</li>
+                <li>IN EVIDENZA</li>
+                <li>IN EVIDENZA</li>
+                <li>IN EVIDENZA</li>
+              </ul>
+            </div>
+            <div class="my-result-container">
+              <div class="my-result-container-title">
+                <h3>Recently played</h3>
+              </div>
+              <div class="my-result-container-images">
+                <div class="my-album-container">
+                  <div class="album-cover">
+
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="my-result-container-title">
+                <h3>Creato per John Doe</h3>
+              </div>
+              <div class="my-result-container-images">
+
+              </div>
+            </div>
           </div>
         </section>
       </div>
