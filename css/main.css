@@ -5,9 +5,16 @@
   padding: 0;
 }
 
+
+/* HOVER E LINK */
 .whitechange:hover {
   color: white;
   text-decoration: none;
+}
+
+.whitechange-u:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .textgrey {
@@ -176,7 +183,7 @@ main {
 #upgrade {
   border: 3px solid white;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 /* ZONA DEI RISULTATI */
@@ -235,6 +242,10 @@ main {
   display: block;
 }
 
+.albumlist-imagedescription img:hover {
+  
+}
+
 .my-album-subtitle {
   font-size: 10px;
   display: block;
@@ -268,22 +279,174 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: grey;
-}
-
-.square {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
+  background-color: GoldenRod;
 }
 
 .my-player-contentleft,
 .my-player-contentright {
-  width: calc(400px - 15px);
+  width: 385px;
   height: 100%;
   background-color: cyan;
+  display: flex;
+  align-items: center;
 }
 
+
+
+.my-minialbum-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.minicover-image img {
+  width: 75px;
+  margin-right: 15px;
+}
+
+.my-minialbum-coverdescription {
+  display: flex;
+  align-items: center;
+}
+
+#mini-title {
+  color: white;
+  font-size: 20px;
+  display: block;
+}
+
+.mini-subtitle {
+  color: grey;
+  font-size: 15px;
+}
+
+.my-minialbum-likefolder {
+  display: flex;
+  align-items: center;
+}
+
+.my-minialbum-likefolder>ul {
+  margin-bottom: 0;
+}
+
+.my-minialbum-likefolder ul li {
+  list-style-type: none;
+  display: inline;
+  color: grey;
+  font-size: 25px;
+
+}
+
+.my-minialbum-likefolder ul li:last-child {
+  margin-left: 10px;
+}
+
+/* PARTE CENTRALE DEL FOOTER */
+/* PARTE CENTRALE SUPERIORE, PLAYER BUTTONS */
+
 .my-player-contentmiddle {
-  width: calc(100%-230px)
+  width: calc(100% - 770px);
+}
+
+.my-player-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.my-player-buttons ul li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  font-size: 30px;
+}
+
+.my-player-buttons ul li:nth-child(1n+2) {
+  margin-left: 15px;
+}
+
+/* LINEA DEL TEMPO */
+.my-time-container {
+  width: 100%;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.my-timelaps {
+  position: relative;
+  border: 3px solid #5a5a5a;
+  width: 50%;
+  height: 1px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.my-timelaps-active {
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  border: 3px solid #c1c1c1;
+  top: -3px;
+  left: -3px;
+}
+
+#minutesecond {
+  font-size: 15px;
+  color: white;
+}
+
+/* PARTE DESTRA DEL FOOTER */
+
+
+
+.my-media-container {
+  width: 100%;
+  background-color: olive;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.my-mediaselection {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.my-mediaselection>ul {
+  margin-bottom: 0;
+}
+
+.my-mediaselection ul li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  font-size: 20px;
+}
+
+.my-mediaselection ul li:nth-child(1n+2) {
+  margin-left: 15px;
+}
+
+.my-volumecontroller {
+  position: relative;
+  border: 3px solid #5a5a5a;
+  width: 50%;
+  height: 1px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.my-volumecontroller-active {
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  border: 3px solid #c1c1c1;
+  top: -3px;
+  left: -3px;
 }
