@@ -60,16 +60,12 @@ main {
 /* DEFINIZIONE DELLA ZONA SINISTRA DI NAVIGAZIONE */
 
 .my-left-sidebar {
-  flex-basis: 400px;
-  flex-shrink: 0;
-}
-
-.my-left-sidebar {
-  width: 400px;
+  width: 300px;
   height: calc(100vh - 100px);
   background-color: #000000;
   display: flex;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .my-left-sidebar-container {
@@ -90,9 +86,12 @@ main {
   height: 50px;
 }
 
+/* FINE LOGO */
+
 .my-homesearchlibrary {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 
 .hsl {
@@ -107,22 +106,32 @@ main {
 .album-title {
   font-size: 15px;
   color: white;
+  padding-left: 15px;
 }
 /* FLEXGROW FLEXGROW FLEXGROW FLEXGROW FLEXGROW FLEXGROW  */
 .my-playlist {
-  margin: 20px 0 10px 0;
+  margin: 30px 0 10px 0;
   flex-grow: 2;
+  overflow: scroll;
 }
 
 .my-playlist-creation {
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 5px 0;
+  margin: 15px 0;
+}
+
+.createplaylist {
+  font-size: 20px;
+}
+
+.my-playlist ul {
+  margin-top: 15px;
 }
 
 .my-playlist ul li{
-  margin: 10px 0;
+  margin: 15px 0;
   list-style-type: none;
 }
 #my-more {
@@ -139,20 +148,41 @@ main {
   width: 100%;
 }
 
+.my-installation {
+  margin-bottom: 15px;
+}
+
+.my-userprofile {
+  margin-top: 15px;
+}
+
 .my-userprofile>img {
   width: 25px;
-  border: 1px solid orange;
-  padding: 2px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: grey;
 }
 
+.my-greyline {
+  border-top: 1px solid grey;
+  width: 100%;
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN  */
 /* NAVIGATORE PER L'UPGRADE */
 
 #upgrade {
   border: 3px solid white;
   padding: 5px 10px;
   border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+#upgrade:hover {
+  text-decoration: none;
+  color:white;
+  transform: scale(1.1);
 }
 
 /* ZONA DEI RISULTATI */
@@ -174,9 +204,11 @@ main {
 
 .my-result-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 15px 0;
   border: 1px solid black;
+  flex-wrap: wrap;
+  border-color: white;
 }
 
 .my-result-nav ul li{
@@ -196,7 +228,7 @@ main {
   justify-content: space-between;
 }
 
-  .albumlist-imagedescription img {
+.albumlist-imagedescription img {
     width: 100%;
 }
 
@@ -232,6 +264,32 @@ main {
   border-radius: 50%;
 }
 
+/* TASTO PLAY SULLE COPERTINE */
+
+.albumimage {
+  position: relative;
+}
+
+.my-play-album {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  font-size: 50px;
+  color: transparent;
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+
+.my-play-album a {
+  text-decoration: none;
+}
+
+.my-play-album:hover {
+  display: inline;
+}
+
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
 
 .my-footer {
@@ -253,11 +311,10 @@ main {
 
 .my-player-contentleft,
 .my-player-contentright {
-  flex-basis: 400px;
+  flex-basis: 300px;
   height: 100%;
   background-color: cyan;
   display: flex;
-
 }
 
 
@@ -281,13 +338,13 @@ main {
 
 #mini-title {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   display: block;
 }
 
 .mini-subtitle {
   color: grey;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .my-minialbum-likefolder {
@@ -315,17 +372,24 @@ main {
 /* PARTE CENTRALE SUPERIORE, PLAYER BUTTONS */
 
 .my-player-contentmiddle {
-
+  width: calc(100% - 600px);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+.my-player-buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .my-player-buttons {
-  width: 300px;
+  min-width: 300px;
   background: blue;
   display: flex;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .my-player-buttons ul li {
@@ -348,7 +412,6 @@ main {
   align-items: center;
 
 }
-
 
 .my-timelaps {
   position: relative;
@@ -439,6 +502,8 @@ main {
     display: none;
     color: red;
   }
+
+
 }
 
 @media all and (min-width: 970) and (max-width: 1169) {
