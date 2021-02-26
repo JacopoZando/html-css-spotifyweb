@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 /* HOVER E LINK */
 .whitechange:hover {
@@ -16,7 +17,7 @@
 }
 
 .textgrey {
-  color: #7D7D7D;
+  color: #61646a;
   text-decoration: none;
 }
 
@@ -111,7 +112,7 @@ main {
 }
 
 .createplaylist {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .my-playlist ul {
@@ -164,7 +165,7 @@ main {
 /* NAVIGATORE PER L'UPGRADE */
 
 .my-upgrade {
-  height: 75px;
+  height: 15%;
   width: 100%;
   text-align: center;
   display: flex;
@@ -206,7 +207,7 @@ main {
 
 .my-result {
   width: 100%;
-  height: calc(100vh - 175px);
+  height: calc(100vh - 15% - 100px);
   display: flex;
   justify-content: center;
   overflow: auto;
@@ -237,12 +238,12 @@ main {
 .greenlight {
   height: 2px;
   width: 50px;
-  background-color: yellow;
+  background-color: #adff2f;
   margin-top: 5px;
 }
 
 .blackline {
-  background-color: black;
+  background-color: #141922;
 }
 
 .my-result-nav ul {
@@ -292,11 +293,12 @@ main {
 
 .h3-album-subtitle {
   font-size: 10px;
-  color: grey;
+  color: #61646a;;
 }
 
 .album-subtitle {
   display: block;
+  color: #61646a;
 }
 
 .circleportrait {
@@ -339,6 +341,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: #282828;
+  z-index: 999;
 }
 
 .my-footer-container {
@@ -349,6 +352,7 @@ main {
   align-items: center;
 }
 
+/* CARATTERISTICHE DELLE TRE ZONE DEL FOOTER */
 .my-player-contentleft,
 .my-player-contentright {
   flex-basis: 20%;
@@ -363,6 +367,7 @@ main {
   flex-direction: column;
 }
 
+/* CONTENUTI DELLA ZONA IN BASSO A SX DEL FOOTER */
 
 .my-minialbum-container {
   width: 100%;
@@ -372,7 +377,7 @@ main {
 }
 
 .minicover-image img {
-  max-width: 75px;
+  max-width: 65px;
   margin-right: 15px;
 }
 
@@ -383,18 +388,19 @@ main {
 
 #mini-title {
   color: white;
-  font-size: 15px;
+  font-size: 12px;
   display: block;
 }
 
 .mini-subtitle {
   color: grey;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .my-minialbum-likefolder {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .my-minialbum-likefolder>ul {
@@ -591,6 +597,11 @@ main {
     flex-basis: calc((100% / 2) - 2%);
     margin-right: 2%;
   }
+
+  /* OTTIMIZZAZIONE ICONE IN BASSO A SX */
+  .my-minialbum-likefolder ul li:last-child {
+    margin-left: 0px;
+  }
 }
 /* S S S S S S S S S S S S S S S S S S S S S S S S S S S S  */
 @media all and (min-width: 769px) and (max-width: 969px) {
@@ -606,6 +617,12 @@ main {
     flex-basis: calc((100% / 2) - 2%);
     margin-right: 2%;
   }
+
+  /* OTTIMIZZAZIONE ICONE IN BASSO A SX */
+  .my-minialbum-likefolder ul li:last-child {
+    margin-left: 0px;
+  }
+
 }
 /* MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD MD  */
 @media all and (min-width: 970px) and (max-width: 1169px) {
@@ -619,6 +636,11 @@ main {
     text-align: center;
     flex-basis: calc((100% / 4) - 2%);
     margin-right: 2%;
+  }
+
+  /* OTTIMIZZAZIONE ICONE IN BASSO A SX */
+  .my-minialbum-likefolder ul li:last-child {
+    margin-left: 0px;
   }
 
 }
