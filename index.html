@@ -17,9 +17,11 @@
 
           <div class="my-left-sidebar-container">
             <!-- zona logo -->
-            <div class="my-left-sidebar-logo">
-              <a class="logo-spotify" href="#"><img src="img/logo.svg" alt=""></a>
-
+            <div class="my-left-sidebar-logo desaparecido">
+              <a class="logo-spotify" href="#"><img src="img/logo.svg" alt="logo Spotufy con scritta Spotify"></a>
+            </div>
+            <div class="my-left-sidebar-logo logosmall">
+              <a class="logo-spotify-small" href="#"><img src="img/logo-small.svg" alt="Logo Spotify senza scritta"></a>
             </div>
             <!-- zona sotto il logo -->
 
@@ -38,32 +40,32 @@
                     <a class="textgrey whitechange desaparecido" href="#">La tua libreria</a>
                   </div>
             </div>
-            <div class="my-playlist">
+            <div class="my-playlist desaparecido">
               <span class="album-title">PLAYLIST</span>
               <div class="my-playlist-creation">
                 <span id="my-more">+</span>
                 <a class="createplaylist textgrey whitechange" href="#">Crea Playlist</a>
               </div>
               <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+                    <li class="whitechange">Nome Playlist</li>
+                    <li class="whitechange">Nome Playlist</li>
+                    <li class="whitechange">Nome Playlist</li>
+                    <li class="whitechange">Nome Playlist</li>
+                    <li class="whitechange">Nome Playlist</li>
+                    <li class="whitechange">Nome Playlist</li>
               </ul>
             </div>
 
-            <div class="my-profile">
+            <div class="my-profile desaparecido">
                 <div class="my-installation">
-                  <span><i class="fas fa-arrow-circle-down"></i> Installa app</span>
+                  <span class="whitechange"><i class="fas fa-arrow-circle-down"></i> Installa app</span>
                 </div>
                 <div class="my-greyline">
 
                 </div>
                 <div class="my-userprofile">
                   <img src="img/profile.svg" alt="">
-                  <span class="album-title">Jacopo Zando</span>
+                  <span id="profile-title">Jacopo Zando</span>
                 </div>
             </div>
 
@@ -80,14 +82,39 @@
         <section class="my-result">
           <div class="my-result-container">
             <div class="my-result-nav">
-              <ul>
-                <li>IN EVIDENZA</li>
-                <li>IN EVIDENZA</li>
-                <li>IN EVIDENZA</li>
-                <li>IN EVIDENZA</li>
-                <li>IN EVIDENZA</li>
-                <li>IN EVIDENZA</li>
-              </ul>
+              <div class="menuchoice">
+                <a class="textgrey whitechange"href="#">IN EVIDENZA</a>
+                <div class="greenlight">
+                </div>
+              </div>
+              <div class="my-result-nav">
+                <div class="menuchoice">
+                  <a class="textgrey whitechange"href="#">PODCAST</a>
+                  <div class="greenlight blackline">
+                  </div>
+                </div>
+                <div class="menuchoice">
+                  <a class="textgrey whitechange"href="#">CLASSIFICHE</a>
+                  <div class="greenlight blackline">
+                  </div>
+                </div>
+                <div class="menuchoice">
+                  <a class="textgrey whitechange"href="#">GENERI E MOOD</a>
+                  <div class="greenlight blackline">
+                  </div>
+                </div>
+                <div class="menuchoice">
+                  <a class="textgrey whitechange"href="#">NUOVE USCITE</a>
+                  <div class="greenlight blackline">
+                  </div>
+                </div>
+                <div class="menuchoice">
+                  <a class="textgrey whitechange"href="#">SCOPRI</a>
+                  <div class="greenlight blackline">
+                  </div>
+                </div>
+              </div>
+
             </div>
             <div class="my-album-title">
               <h3 class="h3-album-title">Recently played</h3>
@@ -157,37 +184,29 @@
             </div>
 
             <div class="my-album-title">
-              <h3 class="h3-album-title">Recently played</h3>
-            </div>
-            <div class="my-result-albumlist">
-              <div class="albumlist-imagedescription">
-                <img src="img/metal_lifting.jpg" alt="">
-                <span class="album-title">Heavy Metal</span>
-                <span class="album-subtitle">Subtitle</span>
-              </div>
-              <div class="albumlist-imagedescription">
-                <img src="img/stranger.jpeg" alt="">
-                <span class="album-title">Heavy Metal</span>
-                <span class="album-subtitle">Subtitle</span>
-              </div>
-              </div>
-
-
-
-            <div class="my-album-title">
-              <h3 class="h3-album-title">Recently played</h3>
+              <h3 class="h3-album-title">Creato per John Doe</h3>
             </div>
             <div class="my-album-subtitle">
               <span class="h3-album-subtitle">Più ascolti più accurati saranno i suggerimenti</span>
             </div>
             <div class="my-result-albumlist">
               <div class="albumlist-imagedescription">
-                <img src="img/radar.jpeg" alt="">
+                <div class="albumimage">
+                  <img src="img/radar.jpeg" alt="">
+                  <div class="my-play-album">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
+                </div>
                 <span class="album-title">Heavy Metal</span>
                 <span class="album-subtitle">Subtitle</span>
               </div>
               <div class="albumlist-imagedescription">
-                <img src="img/mixdaily.jpeg" alt="">
+                <div class="albumimage">
+                  <img src="img/mixdaily.jpeg" alt="">
+                  <div class="my-play-album">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
+                </div>
                 <span class="album-title">Heavy Metal</span>
                 <span class="album-subtitle">Subtitle</span>
               </div>
@@ -201,14 +220,25 @@
             </div>
             <div class="my-result-albumlist">
               <div class="albumlist-imagedescription">
-                <img class="circleportrait" src="img/youg.jpeg" alt="">
-                <span class="album-title">Il tuo release radar</span>
+                <div class="albumimage">
+                  <img class=circleportrait src="img/youg.jpeg" alt="">
+                  <div class="my-play-album">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
+                </div>
+                <span class="album-title">Heavy Metal</span>
                 <span class="album-subtitle">Subtitle</span>
               </div>
               <div class="albumlist-imagedescription">
-                <img class="circleportrait" src="img/einaudi.jpeg" alt="">
+                <div class="albumimage">
+                  <img class=circleportrait src="img/einaudi.jpeg" alt="">
+                  <div class="my-play-album">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
+                </div>
                 <span class="album-title">Heavy Metal</span>
                 <span class="album-subtitle">Subtitle</span>
+              </div>
               </div>
             </div>
             </div>
@@ -262,6 +292,9 @@
                 <div class="my-timelaps-active">
 
                 </div>
+                <div class="my-pointer">
+
+                </div>
               </div>
               <div class="mt-timeremaning">
                 <span id="minutesecond">4:35</span>
@@ -281,6 +314,9 @@
               </div>
               <div class="my-volumecontroller">
                 <div class="my-volumecontroller-active">
+
+                </div>
+                <div class="my-volumepointer">
 
                 </div>
 
